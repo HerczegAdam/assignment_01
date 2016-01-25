@@ -82,6 +82,7 @@ class Test_Assignment_01(unittest.TestCase):
         big = 1e6
         self.assertEqual(big, 1000000.0)
         self.assertTrue(type(big), int)
+        
 
         small = 1e-5
         self.assertEqual(small, 0.0001)
