@@ -80,8 +80,8 @@ class Test_Assignment_01(unittest.TestCase):
         A test for bigger, or smaller integers
         """
         big = 1e6
-        self.assertEqual(big, 100)
-        self.assertFalse(type(big), int)
+        self.assertEqual(big, 1000000.0)
+        self.assertTrue(type(big), int)
 
         small = 1e-5
         self.assertEqual(small, 0.0001)
@@ -95,9 +95,9 @@ class Test_Assignment_01(unittest.TestCase):
         self.assertTrue(type(i) == int)
         self.assertTrue(isinstance(i, float))  # These lines do the same type checking
         i = float(i)
-        self.assertFalse(isinstance(i, float))
+        self.assertTrue(isinstance(i, float))
         i = str(i)
-        self.assertFalse(type(i) == str)
+        self.assertTrue(type(i) == str)
 
     def test_type_conversion2(self):
         """
@@ -113,7 +113,7 @@ class Test_Assignment_01(unittest.TestCase):
         A test to show how rounding can get you
         """
         j = 3.9999
-        self.assertFalse(int(j), float)
+        self.assertTrue(int(j), float)
         self.assertEqual(int(j), 4)
 
     def tearDown(self):
