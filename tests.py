@@ -43,7 +43,7 @@ class Test_Assignment_01(unittest.TestCase):
         """
         A test that will fail.
         """
-        self.assertFalse(True, 'This should fail, please fix it.')
+        self.assertTrue(True)
 
     def test_assert_equality(self):
         """
@@ -80,7 +80,7 @@ class Test_Assignment_01(unittest.TestCase):
         A test for bigger, or smaller integers
         """
         big = 1e6
-        self.assertEqual(big, 100)
+        self.assertEqual(big, 1000000)
         self.assertTrue(type(big), int)
 
         small = 1e-5
