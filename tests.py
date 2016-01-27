@@ -113,7 +113,7 @@ class Test_Assignment_01(unittest.TestCase):
         """
         A test to show how rounding can get you
         """
-        j = 3.999
+        j = 3
         self.assertTrue(int(j), float)
         self.assertEqual(int(j), 4)
 
