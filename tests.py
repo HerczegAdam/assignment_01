@@ -72,7 +72,7 @@ class Test_Assignment_01(unittest.TestCase):
         """
         A test to explore notation of big integers.
         """
-        x = 42,000
+        x = 42000
         self.assertFalse(isinstance(x, int))
 
     def test_bigger_integers(self):
@@ -113,7 +113,7 @@ class Test_Assignment_01(unittest.TestCase):
         """
         A test to show how rounding can get you
         """
-        j = 3.9999
+        j = 3
         self.assertTrue(int(j), float)
         self.assertEqual(int(j), 4)
 
