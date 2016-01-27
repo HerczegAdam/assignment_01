@@ -85,7 +85,7 @@ class Test_Assignment_01(unittest.TestCase):
         
 
         small = 1e-5
-        self.assertEqual(small, 0.0001)
+        self.assertEqual(small, 0.00001)
         self.assertTrue(type(small), int)
 
     def test_type_conversion(self):
@@ -94,7 +94,7 @@ class Test_Assignment_01(unittest.TestCase):
         """
         i = 1
         self.assertTrue(type(i) == int)
-        self.assertTrue(isinstance(i, float))  # These lines do the same type checking
+        self.assertTrue(isinstance(i, int))  # These lines do the same type checking
         i = float(i)
         self.assertTrue(isinstance(i, float))
         i = str(i)
